@@ -2,8 +2,10 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required
+from .admin import UserCreationForm
+
 
 from django.shortcuts import render
 
@@ -40,7 +42,7 @@ def sign_up(request):
         if form.is_valid():
             form.save()
             user = authenticate(
-                username=form.cleaned_data['username'],
+                username=form.cleaned_data['email'],
                 password=form.cleaned_data['password1']
             )
             login(request, user)
@@ -50,6 +52,7 @@ def sign_up(request):
             )
             return HttpResponseRedirect(reverse('home'))  # TODO: go to profile
     return render(request, 'accounts/sign_up.html', {'form': form})
+
 
 @login_required
 def sign_out(request):
