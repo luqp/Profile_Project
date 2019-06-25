@@ -3,4 +3,5 @@ from django.http import HttpResponseRedirect
 
 
 def home(request):
-    return render(request, 'home.html')
+    user = request.user
+    return render(request, 'home.html', {'user': user})
