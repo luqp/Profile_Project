@@ -2,7 +2,7 @@
 This project use Django to build a website where to display information of a user as a profile
 
 ## To use
-You need create a new virtual Python environment:
+You need create a new Python virtual environment:
 ```
 python3 -m venv env
 ```
