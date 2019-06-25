@@ -1,4 +1,4 @@
-# Profile_Project
+# Profile Project
 This project use Django to build a website where to display information of a user as a profile
 
 ## To use
