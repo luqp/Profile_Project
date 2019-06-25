@@ -3,9 +3,14 @@
 {% block title %}Sign Up | {{ super }}{% endblock %}
 
 {% block body %}
-<form method="POST" action="{% url 'accounts:sign_up' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" class="button-primary" value="Sign Up">
-</form>
+<div class="grid-75 content--rigth">
+    <form method="POST" action="{% url 'accounts:sign_up' %}">
+        <legend>
+            <h1>Sign Up</h1>
+        </legend>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="button-primary" value="Sign Up">
+    </form>
+</div>
 {% endblock %}

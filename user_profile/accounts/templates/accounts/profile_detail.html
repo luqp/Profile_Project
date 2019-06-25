@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}Profile | {{ super }}{% endblock %}
+
+{% block body %}
+<div class="grid-75 content--rigth detail">
+    <h1>{{ user.first_name }} {{ user.last_name }}</h1>
+    <section>
+        <p><i class="fas fa-birthday-cake 3x"></i> {{ user.date_of_birth }}</p>
+        <p><i class="fas fa-envelope 3x"></i> {{ user.email }}</p>
+        <div class="bio--group">
+            <i class="fas fa-address-book 3x"></i>
+            <div class="bio">
+                <p>{{ user.bio }}</p>
+            </div>
+        </div>
+        
+    </section>
+</div>
+{% endblock %}

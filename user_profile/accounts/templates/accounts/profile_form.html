@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ title }} | {{ super }}{% endblock %}
+
+{% block body %}
+<div class="grid-75 content--rigth">
+    <form method="POST" action="" enctype="multipart/form-data">
+        <legend>
+            <h1>{{ title }}</h1>
+        </legend>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="button-primary" value="Save">
+    </form>
+</div>
+{% endblock %}
