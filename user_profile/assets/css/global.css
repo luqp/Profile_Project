@@ -245,6 +245,7 @@ body {
   font-weight: 400;
   font-family: "Cousine";
   color: #666;
+  background-color: #fdfdfd;
 }
 
 /* line 6, ../sass/circle/core/layout.sass */
@@ -1437,7 +1438,7 @@ li:only-child .circle--clone--remove {
 /* line 2, ../sass/circle/components/headers.sass */
 .circle--header {
   background: #537d7b;
-  padding: 20px 0;
+  padding: 10px 0;
   margin-bottom: 30px;
 }
 /* line 2, ../sass/circle/core/mixins.sass */

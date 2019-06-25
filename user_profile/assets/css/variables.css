@@ -1,0 +1,127 @@
+.messages li {
+    color: white;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    background-color: #73737330;
+    border-radius: 8px;
+}
+
+    .helptext li {
+        color: #bdbfbf;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .errorlist li {
+        font-size: 14px;
+        line-height: 14px;
+        color: #d76030;
+        list-style: none;
+    }
+
+.bounds.circle--page {
+    background-color: #dbf2f2;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0 6px 20px rgb(187, 187, 187);
+}
+.menu--left {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.menu--left h1 {
+    text-align: center;
+}
+    .logo--big {
+        width: 120px;
+        height: 120px;
+        box-shadow: 0 0 0 14px #fff inset;
+        border-radius: 50%;
+    }
+
+    .logo--big:hover {
+        box-shadow: 0 0 0 60px #fff inset;
+    }
+
+    .menu--left nav {
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .menu--left li {
+        list-style: none
+    }
+
+    .menu--left li a {
+        color: #789d9d;;
+        text-decoration: none;
+    }
+
+.content--left{
+    min-height: 400px;
+    padding: 20px 20px 20px 24px;
+    background-color: white;
+    box-shadow: inset 4px 0 5px rgb(228, 228, 228);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.content--rigth {
+    padding: 20px;
+    background-color: white;
+    box-shadow: -6px 0 10px rgb(210, 210, 210);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.img--profile {
+    background-color: white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0px 0px 8px rgb(176, 182, 183);
+}
+
+div.detail {
+    padding: 30px;
+}
+
+    div.detail .bio--group {
+        display: flex;
+    }
+
+    div.detail .bio--group i {
+        display: flex;
+        margin-right: 12px; 
+    }
+
+    div.detail .bio {
+        flex-grow: 1;
+        min-height: 120px;
+        background: #f7f7f7;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+@media screen and (max-width: 640px) {
+    header.circle--header {
+        margin-bottom: 0;
+    }
+    .content--left,
+    .content--rigth {
+        padding-top: 0;
+        border-radius: 20px;
+    }
+    .menu--left {
+        display: flex;
+        justify-content: start;
+        flex-grow: 1;
+    }
+    .menu--left img,
+    .menu--left a {
+        margin: auto 80px;
+    }
+    .menu--left nav {
+        margin-left: 0px;
+    }
+}
